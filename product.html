@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details | ModeHaus</title>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo serif-font">
+                    <a href="index.html">ModeHaus.</a>
+                </div>
+
+                <div class="menu">
+                    <a href="index.html">Home</a>
+                    <a href="shop.html">Shop</a>
+                    <a href="lookbook.html">Lookbook</a>
+                </div>
+
+                <div class="icons">
+                    <a href="cart.html">🛒 (<span id="cart-count">0</span>)</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Product Detail -->
+    <section class="container" id="product-detail">
+        <div class="single-product-grid">
+
+            <div class="single-img">
+                <img id="p-img" src="" alt="">
+            </div>
+
+            <div class="single-info">
+                <h1 id="p-name">Loading...</h1>
+                <span id="p-price" class="price"></span>
+                <p id="p-desc"></p>
+                <button class="btn" id="add-btn">Add to Cart</button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 ModeHaus.</p>
+    </footer>
+
+    <!-- JS -->
+    <script src="main.js"></script>
+</body>
+</html>

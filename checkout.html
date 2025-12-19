@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout | ModeHaus</title>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo serif-font">
+                    <a href="index.html">ModeHaus.</a>
+                </div>
+
+                <div class="icons">
+                    <a href="cart.html">🛒</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Checkout Section -->
+    <section class="container checkout-container">
+
+        <!-- Billing Form -->
+        <div class="billing-form">
+            <h3>Billing Details</h3>
+
+            <form onsubmit="event.preventDefault(); alert('Order Placed Successfully!'); window.location.href='index.html';">
+                
+                <input type="text" placeholder="Full Name" required>
+                <input type="email" placeholder="Email Address" required>
+                <input type="text" placeholder="Shipping Address" required>
+                <input type="text" placeholder="City" required>
+                <input type="text" placeholder="Zip Code" required>
+
+                <div style="margin: 20px 0; display: flex; align-items: center; gap: 10px;">
+                    <input type="checkbox" id="terms" required style="width: auto; margin: 0;">
+                    <label for="terms" style="font-size: 0.9rem;">I agree to the Terms & Conditions</label>
+                </div>
+
+                <button type="submit" class="btn" style="width: 100%; margin-top: 10px;">Place Order</button>
+            </form>
+        </div>
+
+        <!-- Payment Methods -->
+        <div class="order-summary">
+            <h3>Payment Method</h3>
+
+            <p style="margin-bottom: 20px; font-size: 0.9rem; color: #666;">
+                Choose a secure payment gateway:
+            </p>
+
+            <button class="payment-btn stripe">Pay with Card (Stripe)</button>
+            <button class="payment-btn paypal">Pay with PayPal</button>
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 ModeHaus.</p>
+    </footer>
+
+</body>
+</html>

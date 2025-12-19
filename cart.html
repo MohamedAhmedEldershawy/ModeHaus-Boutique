@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart | ModeHaus</title>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo serif-font">
+                    <a href="index.html">ModeHaus.</a>
+                </div>
+
+                <div class="menu">
+                    <a href="index.html">Home</a>
+                    <a href="shop.html">Shop</a>
+                    <a href="lookbook.html">Lookbook</a>
+                </div>
+
+                <div class="icons">
+                    <a href="cart.html">🛒 (<span id="cart-count">0</span>)</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Cart Section -->
+    <section class="container products">
+        
+        <h2 class="section-title">Your Bag</h2>
+
+        <table class="cart-table">
+            <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Price</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+
+            <tbody id="cart-items"></tbody>
+        </table>
+
+        <div class="total-price">
+            <h3>Total: <span id="total-price">$0</span></h3>
+            <a href="checkout.html" class="btn">Proceed to Checkout</a>
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 ModeHaus.</p>
+    </footer>
+
+    <!-- JS -->
+    <script src="main.js"></script>
+
+</body>
+</html>
